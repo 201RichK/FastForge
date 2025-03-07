@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fastforge"
+version = "0.1.0"
+description = "A fast and powerful Python project generator"
+authors = ["Amos Pascal Amos <amosamospascal@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+[tool.poetry.scripts]
+fastforge = "fastforge.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
